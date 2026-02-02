@@ -48,4 +48,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    /* --- Burger Menu Logic --- */
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    if (burger) {
+        burger.addEventListener('click', () => {
+            console.log('Burger clicked'); // Debug
+
+            // Toggle Nav
+            nav.classList.toggle('nav-active');
+
+            // Burger Animation
+            burger.classList.toggle('toggle');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav-active');
+                burger.classList.remove('toggle');
+            });
+        });
+    }
 });

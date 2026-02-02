@@ -529,10 +529,203 @@ header,
 }
 
 /* Specific colors for specific buttons if active (Optional flair) */
+/* Specific colors for specific buttons if active (Optional flair) */
 .filter-btn[data-filter="audiovisuel"].active {
     box-shadow: 2px 2px 0 var(--c-orange);
 }
 
 .filter-btn[data-filter="graphisme"].active {
     box-shadow: 2px 2px 0 var(--c-yellow);
+}
+
+/* --- Burger Menu Default (Hidden on Desktop) --- */
+.burger {
+    display: none;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* Tablet & Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navigation: Burger Menu Style */
+    nav {
+        justify-content: space-between;
+        padding: 1rem 5%;
+        position: relative;
+    }
+
+    .nav-links {
+        position: fixed;
+        /* Fixed to cover screen */
+        right: 0px;
+        height: 100vh;
+        top: 0;
+        background-color: var(--bg-cream);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Center items vertically */
+        width: 100%;
+        /* Full width for better UX on mobile */
+        transform: translateY(-100%);
+        /* Slide from top or right? Let's do top because sticky nav */
+        transition: transform 0.5s ease-in-out;
+        z-index: 90;
+        /* Below the burger icon but above content */
+        border-bottom: 4px solid var(--text-black);
+    }
+
+    .nav-links.nav-active {
+        transform: translateY(0%);
+    }
+
+    .nav-links a {
+        font-size: 2rem;
+        /* Bigger font for menu */
+        margin: 1.5rem 0;
+    }
+
+    /* Burger Icon */
+    .burger {
+        display: block !important;
+        /* Force show */
+        cursor: pointer;
+        z-index: 100;
+        /* Above the menu */
+    }
+
+    /* Burger Lines */
+    .burger div {
+        width: 30px;
+        height: 4px;
+        /* Thicker for retro feel */
+        background-color: var(--text-black);
+        margin: 6px;
+        transition: all 0.3s ease;
+    }
+
+    /* Burger Toggle Animation */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-8px, -6px);
+    }
+
+    /* Hero Typography */
+    .hero-title {
+        font-size: 15vw;
+        /* Keep relative but ensure line-height is tight */
+        margin-bottom: 2rem;
+    }
+
+    .hero-title span {
+        font-size: 1.5rem;
+    }
+
+    /* Stripes reduction */
+    .stripe {
+        height: 8vh;
+    }
+
+    /* Bio Section */
+    .bio-container {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+        gap: 2rem;
+        padding: 3rem 5%;
+    }
+
+    .bio-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .bio-content {
+        columns: 1;
+        /* Single column text */
+    }
+
+    /* Dropcap smaller on mobile */
+    .bio-content p:first-of-type::first-letter {
+        font-size: 3rem;
+    }
+
+    /* Project Grid */
+    .project-grid {
+        grid-template-columns: 1fr;
+        /* One card per row */
+    }
+
+    .projects,
+    .contact-section {
+        padding: 3rem 5%;
+    }
+}
+
+/* Mobile Small (max-width: 480px) */
+@media (max-width: 480px) {
+
+    /* Header padding reduction */
+    header {
+        padding: 2rem 1rem !important;
+        /* Force override inline styles */
+    }
+
+    .hero-title {
+        font-size: 3.5rem !important;
+        /* Fixed manageable size for mobile */
+    }
+
+    .hero-title span {
+        font-size: 1.2rem;
+    }
+
+    /* Tagline */
+    .tagline {
+        font-size: 1.5rem;
+        padding: 1.5rem 5%;
+    }
+
+    /* Stripes even smaller */
+    .stripe {
+        height: 6vh;
+    }
+
+    /* Filter Buttons stack */
+    .filter-buttons {
+        gap: 1rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        /* Full width buttons on mobile */
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-center {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Project Card Images */
+    .p-img {
+        height: 200px;
+    }
 }
