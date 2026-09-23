@@ -1,0 +1,67 @@
+{
+    "twd-open-hearts": {
+        "title": "The Weeknd - Open Hearts",
+        "category": "audiovisuel",
+        "category_label": "Réalisation & Montage",
+        "ref": "REF. VIDEO-001",
+        "description": "Ce projet est une exploration visuelle basée sur le titre \"Open Hearts\" de The Weeknd. L'objectif était de capturer l'atmosphère cinématique et mélancolique de l'artiste à travers un montage rythmé et des choix colorimétriques audacieux.",
+        "role": "Réalisateur & Monteur",
+        "software": "Premiere Pro, After Effects",
+        "year": "2025",
+        "thumbnail": "img/illustration/twd.png",
+        "media_type": "video",
+        "media_url": "https://www.youtube.com/embed/jzBP2Ycr1Rw"
+    },
+    "pupaxorelsan": {
+        "title": "Pupa x Orelsan",
+        "category": "graphisme",
+        "category_label": "Affiche & Graphisme",
+        "ref": "REF. GRAPHIQUE-001",
+        "description": "Création d'une affiche pour une marque fictive de chewing-gum en collaboration avec Orelsan.<br><br><strong>Contexte :</strong> Projet scolaire divisé en deux étapes :<br>1. <strong>Identité de marque :</strong> Conception complète d'une marque de chewing-gum et de son logotype.<br>2. <strong>Campagne publicitaire :</strong> Création d'une affiche promotionnelle mettant en scène une collaboration événementielle entre la marque créée et un artiste tiré au sort (Orelsan).",
+        "role": "Graphiste",
+        "software": "Photoshop, Illustrator",
+        "year": "2025",
+        "thumbnail": "img/illustration/orelsanXPupa.jpg",
+        "media_type": "image",
+        "media_url": "img/illustration/orelsanXPupa.jpg"
+    },
+    "cvvideo": {
+        "title": "CV Vidéo",
+        "category": "audiovisuel",
+        "category_label": "Réalisation & Montage",
+        "ref": "REF. VIDEO-002",
+        "description": "Projet de CV vidéo demandé pour un cours d'anglais. La vidéo devait me présenter, montrer mes passions et ce dont je suis capable pour la création audiovisuelle.",
+        "role": "Réalisateur & Monteur",
+        "software": "Premiere Pro, After Effects",
+        "year": "2026",
+        "thumbnail": "img/illustration/cv.png",
+        "media_type": "video",
+        "media_url": "https://www.youtube.com/embed/mVDiD6Wx4Og?si=aMkv_79nZsnv0UZW"
+    },
+    "liminal": {
+        "title": "Pourquoi les liminal spaces nous passionnent ?",
+        "category": "audiovisuel",
+        "category_label": "Réalisation & Montage",
+        "ref": "REF. VIDEO-003",
+        "description": "Projet vidéo personnel sur le phénomène des liminal spaces. Ce phénomène est l'ensemble des lieux étranges, familiers mais inquiétants. Ces lieux sont souvent associés à une sensation de malaise, de nostalgie ou de dérangement.",
+        "role": "Réalisateur & Monteur",
+        "software": "Premiere Pro, After Effects",
+        "year": "2026",
+        "thumbnail": "img/illustration/liminal.jpg",
+        "media_type": "video",
+        "media_url": "https://www.youtube.com/embed/PNGEOLOUVMY?si=gEuXt_DVsGXG82xq"
+    },
+    "la-famille-court-metrage": {
+        "title": "La famille (Court-métrage)",
+        "category": "audiovisuel",
+        "category_label": "Projet Multimédia",
+        "ref": "REF. VIDEO-005",
+        "description": "Dans le cadre d'un projet universitaire, réalisation intégrale d'un court-métrage en équipe, de la pré-production à la post-production : écriture du scénario, repérage et choix des décors, recherche et sélection des acteurs, direction de tournage, puis montage et étalonnage du projet.",
+        "role": "Montage , Réalisation , Perchiste",
+        "software": "After Effect",
+        "year": "2026",
+        "thumbnail": "img/illustration/la-famille-court-metrage-thumb-1790192079.webp",
+        "media_type": "video",
+        "media_url": "https://www.youtube.com/embed/dfu_AZn4uLw"
+    }
+}

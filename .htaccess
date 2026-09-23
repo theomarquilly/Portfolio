@@ -1,0 +1,16 @@
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /3/
+
+    # Redirections rétrocompatibles des anciennes URLs .html
+    RewriteRule ^index\.html$ index.php [R=301,L]
+    RewriteRule ^portfolio\.html$ portfolio.php [R=301,L]
+    RewriteRule ^contact\.html$ contact.php [R=301,L]
+    RewriteRule ^projects/(.+)\.html$ project.php?id=$1 [R=301,L,QSA]
+
+    # URLs courtes optionnelles (ex: projet/twd-open-hearts ou project/twd-open-hearts)
+    RewriteRule ^projet/([^/]+)/?$ project.php?id=$1 [L,QSA]
+    RewriteRule ^project/([^/]+)/?$ project.php?id=$1 [L,QSA]
+</IfModule>

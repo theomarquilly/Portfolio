@@ -1,0 +1,10 @@
+# Fichiers système Windows & Mac
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE / Éditeurs
+.vscode/
+.idea/
+*.sublime-workspace
